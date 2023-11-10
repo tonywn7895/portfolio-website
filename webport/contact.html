@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bea41f7c58.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+    <style>
+        .Btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition-duration: .3s;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+        background-color: rgba(255, 65, 65);
+        position: relative;
+        left: -10px;
+        bottom: 3px;
+      }
+      
+      /* plus sign */
+      .sign {
+        width: 100%;
+        transition-duration: .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .sign svg {
+        width: 17px;
+      }
+      
+      .sign svg path {
+        fill: white;
+      }
+      /* text */
+      .text {
+        position: absolute;
+        right: 0%;
+        width: 0%;
+        opacity: 0;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        transition-duration: .3s;
+      }
+      /* hover effect on button width */
+      .Btn:hover {
+        width: 125px;
+        border-radius: 40px;
+        transition-duration: .3s;
+      }
+      
+      .Btn:hover .sign {
+        width: 30%;
+        transition-duration: .3s;
+        padding-left: 20px;
+      }
+      /* hover effect button's text */
+      .Btn:hover .text {
+        opacity: 1;
+        width: 70%;
+        transition-duration: .3s;
+        padding-right: 10px;
+      }
+      /* button click effect*/
+      .Btn:active {
+        transform: translate(2px ,2px);
+      }
+      .wraptext{
+        position: relative;
+        right: 50px;
+      }
+      .icon2{
+        position: relative;
+        left: 10px;
+      }
+      .icon3{
+        position: relative;
+        left: 20px;
+      }
+      .icon4{
+        position: relative;
+        left: 30px;
+      }
+
+      #fs-frm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+#fs-frm-inputs label,
+#fs-frm-inputs input,
+#fs-frm-inputs textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#fs-frm-inputs input[type="text"],
+#fs-frm-inputs input[type="email"],
+#fs-frm-inputs textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#fs-frm-inputs textarea {
+  resize: vertical;
+}
+
+#fs-frm input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#fs-frm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#fs-frm input[type="submit"]:focus {
+  outline: none;
+}
+
+#fs-frm-inputs label {
+  font-weight: bold;
+}
+.h2{
+    position: absolute;
+    left: 920px;
+    top: 550px;
+}
+.icon1{
+    position: absolute;
+    left: 850px;
+    top: 620px;
+}
+.icon2{
+    position: absolute;
+    left: 970px;
+    top: 620px;
+}
+
+        /* Mobile responsiveness */
+
+            .Btn:hover, .Btn:active {
+                width: 100%;
+            }
+
+            .Btn:hover .sign, .Btn:hover .text {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .wraptext, .icon1, .icon2, .icon3, .icon4, .h2 {
+                position: static;
+                left: 0;
+                top: 0;
+                right: 0;
+            }
+
+            #fs-frm {
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .h2 {
+                text-align: center;
+            }
+
+            .icon1, .icon2, .icon3, .icon4 {
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+      </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar bg-base-100 position-sticky">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl" href="index.html">Home</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+    
+                <a href="contact.html" class="Btn">
+                    <div class="sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                    </div>
+                    <div class="text">Contact</div>
+                  </a>
+                  
+                            
+                <li><a class="About"href="About.html" >About</a></li>
+                <li>
+                  <details>
+                    <summary class="Project">
+                      Project
+                    </summary>
+                    <ul class="p-2 bg-base-100">
+                      
+                      <li><a href="graphic.html">Graphic</a></li>
+                      <li><a href="activity.html">Activity</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xgebgzkj" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="ชื่อและนาสกุล" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="name@gmail.com" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="พิมพ์ข้อความได้เลย ☺☻." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    
+      <div>
+        <h2 class="h2 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl dark:text-white">OR</h2>
+      </div>
+      <div class="icon1">
+      <a href="https://www.facebook.com/wirot.nalaead.5"><i class="fa-brands fa-facebook fa-fade fa-2xl"></i></a>
+    </div>
+      <div class="icon2"><a href="https://www.instagram.com/tonywn_/"><i class="fa-brands fa-instagram fa-fade fa-2xl"></i></a></div>
+    </body>
+</html>

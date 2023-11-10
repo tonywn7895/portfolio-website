@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgba(255, 65, 65);
+  position: relative;
+  left: -10px;
+  bottom: 3px;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
+</style>
+</head>
+<body>
+    <div class="navbar bg-base-100 position-sticky">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl" href="index.html">Home</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+
+            <a href="contact.html" class="Btn">
+              <div class="sign">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+              </div>
+              <div class="text">Contact</div>
+            </a>
+            
+                        
+            <li><a class="About"href="About.html" >About</a></li>
+            <li>
+              <details>
+                <summary class="Project">
+                  Project
+                </summary>
+                <ul class="p-2 bg-base-100">
+                  <li><a href="graphic.html">Graphic</a></li>
+                  <li><a href="activity.html">Activity</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="text1">
+        <h1>Hi!</h1>
+        <h2>I'm Tony</h2>
+        <h3>Work As Website Developer</h3>
+      </div> -->
+      <!-- component -->
+<div class="relative mt-10 h-screen bg-grgba pt-10 sm:pt-0 mb-10">
+ 
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:gap-20 bg-rgba">
+  <div
+        class="content"
+      >
+      <div class="flex items-center gap-3">
+        <hr class="w-10 bg-orange-500 border "/>
+        <span class="md:text-[18px] font-medium text-white ">
+          Hello !
+        </span>
+      </div>
+      <p class="text-[40px] lg:text-[45px] xl:text-[55px] font-bold leading-tight mt-5 sm:mt-0 ">
+        I'm Wirot Nalaead <br />
+
+
+      </p>
+      <p class="mt-5 md:text-md ">
+        I'm Studen and creative Developer, and I'm very passionate and
+        dedicated to my <br class="hidden md:block" /> work.Your Satisfaction is my success
+      </p>
+      <div class="flex gap-4 mt-10">
+     
+      <a href="contact.html" class="font-medium text-[16px] flex items-center px-5 py-3 md:py-4 md:px-8 rounded-xl capitalize bg-gradient-to-r from-orange-300 to-orange-500 hover:from-pink-500 hover:to-yellow-500  relative gap-2 transition duration-300 hover:scale-105 text-white shadow-glass ">Get In Touch
+        <span class="animate-ping absolute right-0 top-0 w-3 h-3  rounded-full bg-gradient-to-r from-orange -400 to-orange-700 "></span>
+      </a>
+      </div>
+  
+    </div>
+    <div class="relative sm:mt-0 mt-10 px-6 sm:px-0">
+  
+      <img class="w-[600px] animate__animated animate__fadeInRight animate__delay-.5s" src="png/tony.jpg" alt="" />
+    </div>
+  </div>
+  </div>
+</body>
+</html>
